@@ -1,0 +1,45 @@
+{
+  "title": "AI Capital & The Economic Layer",
+  "date": "2026/2/26",
+  "xLink": "https://x.com/i/spaces/1RJjpzpMmPNKw?s=20",
+  "speakers": [
+    { "name": "David Wang", "role": "Founder", "project": "@opendesciorg" },
+    { "name": "Kunal Gandhi", "role": "Founder", "project": "@HeyElsaAI" },
+    { "name": "Ryan Wong", "role": "Analyst", "project": "@HTX_Research" }
+  ],
+  "summary": [
+    {
+      "topic": "主题概述",
+      "content": "探讨AI与加密的交汇如何构建新的经济层。讨论了AI经济的三大核心要素（算法、基础设施、数据）、自主AI代理作为经济主体的崛起、本轮融资标准的根本性变化，以及权力在生态系统中的分布。"
+    },
+    {
+      "topic": "AI竞争的三大维度：算法、基础设施、数据",
+      "content": "David 将AI竞争拆解为三层：算法（语言模型已成红海——ChatGPT、DeepSeek、Claude轮流领先）、基础设施（算力和能源的采购问题）、数据（真正的护城河）。他认为数据是差异化的关键——谁拥有最优质的数据集来训练模型，谁就能胜出。Meta和Alphabet因多年用户数据积累可能最具优势。一个新挑战是：AI生成的内容正在训练下一代AI，导致数据质量稀释。"
+    },
+    {
+      "topic": "AI代理成为经济主体",
+      "content": "Ryan 认为「下一经济层」的核心是价值的自动化——AI代理正在成为主要经济主体，能够汇聚资产、谈判合约、优化资本配置。区块链为此提供了第一个无许可的机器对机器结算银行。他预测未来链上大多数交易将由AI而非人类发起。"
+    },
+    {
+      "topic": "HeyElsa：AI降低DeFi门槛的实践",
+      "content": "Kunal 分享了 Elsa 作为加密AI copilot的实践——用户可以用自然语言完成跨链桥接、组合投资组合、开永续合约等操作，无需理解底层复杂性。已处理1100万+轮对话、5亿美元+链上交易量。下一步是构建开放生态，让其他开发者基于Elsa的基础设施构建应用。"
+    },
+    {
+      "topic": "融资标准：从叙事驱动到收入驱动",
+      "content": "Kunal 对比2021年和当前：2021年有故事就能融到钱，现在投资人要看真实收入、用户留存率、分发策略。David 补充说市场正从「炒币」转向Web2.5——真正解决现实问题、有真实用户和收入的公司，再叠加Web3技术。纯Web3项目长期生存会很困难。他还指出很多Top100项目的基金会坐拥大量国库资金，却对社会贡献有限。"
+    },
+    {
+      "topic": "加密生态中的权力分布",
+      "content": "Ryan 认为权力在向「协调和分发层」集中——智能层（模型/算力）、协议层（数据/溯源）、流动性层（价值实现）三者之间，谁能标准化交互谁就掌权。David 认为交易所仍是最强大的角色，因为他们控制Web2到Web3的入口。Kunal 则认为长期权力会归于执行层——决定交易路由、意图结算和资本分配的基础设施。"
+    }
+  ],
+  "terms": [
+    { "term": "AI Agent", "definition": "AI代理，能自主执行任务的人工智能程序" },
+    { "term": "x402", "definition": "一种让AI代理用加密货币进行微支付的协议标准" },
+    { "term": "OpenClaw", "definition": "开源AI代理框架，允许代理执行链上操作" },
+    { "term": "Copilot", "definition": "AI副驾驶，辅助用户完成复杂操作的AI助手" },
+    { "term": "Web2.5", "definition": "结合Web2真实业务和Web3技术的混合模式" },
+    { "term": "DeSci", "definition": "Decentralized Science，去中心化科学" },
+    { "term": "PMF", "definition": "Product-Market Fit，产品市场契合度" }
+  ]
+}

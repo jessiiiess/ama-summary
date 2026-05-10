@@ -1,0 +1,49 @@
+{
+  "title": "AI + Crypto: Hype or the next BIG thing?",
+  "date": "2026/3/26",
+  "xLink": "https://x.com/i/spaces/1RJjpzpMmPNKw?s=20",
+  "speakers": [
+    { "name": "Han Jin", "role": "CEO", "project": "@bluwhaleai" },
+    { "name": "John Mendez", "role": "Head of AI", "project": "@AITECH" },
+    { "name": "Chloe Zheng", "role": "Researcher", "project": "@HTX_Research" }
+  ],
+  "summary": [
+    {
+      "topic": "主题概述",
+      "content": "深入探讨AI+Crypto是炒作还是下一个大趋势。讨论了AI代理经济的爆发（ERC-8004标准、11.4万代理上线）、OpenClaw对行业的颠覆性影响、加密为AI初创公司提供的避风港价值、AI自主性的风险与限制，以及「人类被AI雇佣」的新经济模式。"
+    },
+    {
+      "topic": "AI代理经济的爆发",
+      "content": "John 指出ERC-8004标准上线仅两个月就有11.4万代理部署、9万日活用户，形成了「代理的Fiverr」。AITECH的Agent Forge从工作流构建平台演进到Copilot模式。Han 认为OpenClaw是真正的转折点——去年构建链上执行代理极其痛苦（API、交易、gas费全要自建），今年OpenClaw让很多底层组件可以直接使用开源方案替代。但他认为杀手级应用尚未出现，仍在早期实验阶段。"
+    },
+    {
+      "topic": "加密对AI初创公司的战略价值",
+      "content": "Han 从AI公司转型进入加密的亲身经历出发：在Web2与OpenAI、Anthropic等巨头竞争几乎不可能——他们每几个月发布新功能就能抹掉你几年的积累。而加密金融服务是高门槛领域，科技巨头短期不会进入，给了初创公司宝贵的构建时间。加上Z世代对数字资产的接受度，加密提供了一条AI在金融产品上规模化的替代赛道。"
+    },
+    {
+      "topic": "AI自主性的三大限制",
+      "content": "John 列举三个关键风险：1) 幻觉问题——大型咨询公司用LLM给政府做报告时引用了不存在的来源，导致大规模退款；2) 代理安全——缺乏护栏时代理可能执行DROP TABLE等灾难性命令；3) 恶意依赖——NPM/PyPI上出现过伪装成正常库的钱包窃取器，代理不会辨别。此外Amazon内部泄露备忘录显示大量生产代码由AI编写，高级工程师来不及审查所有PR。"
+    },
+    {
+      "topic": "「玩火」：不可避免的重大事故",
+      "content": "Han 预测1-2年内必然会出现AI「失控」造成重大损害的事件。原因是OpenAI和Anthropic为赶IPO正在削减安全护栏以加速开发。他类比加密行业的Bybit被盗数十亿美元和FTX崩盘——这种公开的重大失败是不可避免的学习代价，问题只是谁先犯错。"
+    },
+    {
+      "topic": "Rent a Human：AI雇佣人类",
+      "content": "John 介绍了一个已有60万人注册的平台——AI代理在上面发布它们无法完成的物理任务悬赏（如拍摄洛杉矶所有咖啡馆照片），人类完成后用稳定币结算。这预示着未来人类和AI代理协作的零工经济模式——AI不会取代所有工作，但白领岗位正在快速变化，高级人才开始将AI代理作为下属来管理。"
+    },
+    {
+      "topic": "ZK隐私与透明性的平衡",
+      "content": "Han 认为隐私是加密带给AI的最后一个关键价值主张。Bluwhale作为L3构建在ZK rollup之上，目标是在保护隐私的前提下，将Web2和Web3的金融数据整合，让AI代理获得全面视野以提供最优金融服务。Chloe补充说X402等标准让AI代理隔离在独立环境中进行交易和支付，确保一切透明可追溯。"
+    }
+  ],
+  "terms": [
+    { "term": "ERC-8004", "definition": "以太坊标准，允许在链上部署和管理AI代理的协议" },
+    { "term": "OpenClaw", "definition": "开源AI代理框架，让代理能执行链上操作和交互" },
+    { "term": "Agent Forge", "definition": "AITECH开发的AI工作流构建平台" },
+    { "term": "ZK", "definition": "Zero-Knowledge，零知识证明——验证信息而不暴露底层数据" },
+    { "term": "L3", "definition": "Layer 3，建立在L2之上的应用层/执行层" },
+    { "term": "Rollup", "definition": "将多笔交易打包处理后提交到主链的扩容方案" },
+    { "term": "Rent a Human", "definition": "AI代理发布任务悬赏，人类完成物理世界任务获取加密货币报酬的平台" }
+  ]
+}

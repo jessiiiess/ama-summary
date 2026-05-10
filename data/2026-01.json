@@ -1,0 +1,47 @@
+{
+  "title": "From Tokens to Systems: How Crypto Became a Financial Stack",
+  "date": "2026/1/15",
+  "xLink": "https://x.com/i/spaces/1lPKqvXynPYGb?s=20",
+  "speakers": [
+    { "name": "Brian Mehler", "role": "CEO", "project": "@Stable" },
+    { "name": "Tomer Warschauer Nuni", "role": "CMO", "project": "@Kima Network" },
+    { "name": "Scott Collen", "role": "VP, Ecosystem", "project": "@Midnight Foundation" },
+    { "name": "Kaspador", "role": "Community Ambassador", "project": "@Kaspa" },
+    { "name": "Chloe Zheng", "role": "Researcher", "project": "@HTX_Research" }
+  ],
+  "summary": [
+    {
+      "topic": "主题概述",
+      "content": "探讨加密从「单纯发Token」到「构建完整金融基础设施栈」的演进。讨论了稳定币作为数字货币的基础设施挑战、PoW共识的持续价值、隐私层的崛起、钱包UX的巨大进步，以及上一轮周期的教训。"
+    },
+    {
+      "topic": "加密何时成为真正的金融系统",
+      "content": "Brian 认为关键转折点在2021年稳定币大规模使用之后——人们开始用加密做日常转账而非纯投机，焦点转向支付、结算、出入金、托管和合规。Tomer 则从更宏观角度回顾：比特币是实验性的价值存储证明，以太坊的智能合约是真正的范式突破，释放了整个创新空间。但贪婪让很多人发行无用代币，现在行业正在经历自然筛选。"
+    },
+    {
+      "topic": "基础设施层的静默成熟",
+      "content": "Kaspador 指出公众只关注DeFi和meme casino等「闪亮事物」，但底层基础设施已悄然突破——Kaspa的blockDAG架构实现了并行出块，在保持PoW安全性的同时达到10 BPS。Scott 则强调合规层和风险管理工具的进步才是机构入场的真正前提。两人都同意钱包UX相比几年前有了10-50倍的提升。"
+    },
+    {
+      "topic": "稳定币远比想象中复杂",
+      "content": "Brian 指出稳定币表面简单（锚定美元），但规模化后，真正难的是如何快速移动、如何可预测结算、如何跨境集成。Stable的方案是用USDT作原生Gas代币，消除用户必须先持有L1代币才能转账的摩擦——这是大规模采用的一大障碍。他举例：你给新人发$100 USDT，但对方没有gas代币就无法再动它，这个体验让很多人直接放弃加密。"
+    },
+    {
+      "topic": "PoW为何依然重要",
+      "content": "Kaspador 认为在模块化分层架构盛行的今天，PoW仍然是唯一将数字系统锚定到客观外部成本的共识——无需治理委员会或社会协调。Kaspa通过DAG实现并行出块证明了PoW可以兼具安全和速度，计划达到100 BPS。当L1本身可以原生扩展时，L2就不再是补丁而是能力延伸。"
+    },
+    {
+      "topic": "上轮周期最大教训",
+      "content": "Kaspador：不要为了「快速和便宜」牺牲安全性和可扩展性。Scott：行业无法有效定价风险，没有追问收益的真正来源——现在投资者开始看收益的底层逻辑，估值回归理性。Tomer 将当前比作互联网泡沫：99%的项目被淘汰后，资金流向了真正的建设者（eBay、Amazon等），加密还没到那一步，但自然选择正在发生。"
+    }
+  ],
+  "terms": [
+    { "term": "PoW", "definition": "Proof of Work，工作量证明共识机制" },
+    { "term": "blockDAG", "definition": "Block Directed Acyclic Graph，一种允许并行出块的区块链架构" },
+    { "term": "BPS", "definition": "Blocks Per Second，每秒出块数" },
+    { "term": "ZK", "definition": "Zero-Knowledge，零知识证明——在不暴露具体数据的情况下验证信息真实性" },
+    { "term": "Gas", "definition": "区块链网络中交易所需的手续费" },
+    { "term": "RWA", "definition": "Real World Assets，真实世界资产代币化" },
+    { "term": "DYOR", "definition": "Do Your Own Research，自己做研究（投资警示语）" }
+  ]
+}

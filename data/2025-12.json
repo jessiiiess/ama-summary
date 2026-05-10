@@ -1,0 +1,45 @@
+{
+  "title": "Year-End Outlook! What's Next for 2026?",
+  "date": "2025/12/11",
+  "xLink": "https://x.com/HTX_Global/status/1999070654348640319?s=20",
+  "speakers": [
+    { "name": "Oliver Feldmeier", "role": "Founder", "project": "@Griffin_AI" },
+    { "name": "Joanna Zeng", "role": "Co-Founder/CEO", "project": "@soon_svm" },
+    { "name": "Chloe Zheng", "role": "Researcher", "project": "@HTX_Research" }
+  ],
+  "summary": [
+    {
+      "topic": "主题概述",
+      "content": "回顾2025年加密市场表现，展望2026年趋势。讨论了基本面与价格走势的背离、市场权力从OG鲸鱼向华尔街转移、永续合约（perps）赛道的演变，以及韩国散户市场的独特价值。"
+    },
+    {
+      "topic": "2025年的矛盾：基本面强但价格平淡",
+      "content": "Oliver 指出2025年基本面极其强劲——美国政治转向、SEC新规、欧洲MiCA法规、新加坡和香港的监管推进、机构入场——但价格表现却令人失望，远不如预期中的牛市。他认为这是市场的最大意外。Joanna 则补充说加密市场越来越由叙事驱动，隐私赛道和预测市场等老叙事在2025年重新火爆。"
+    },
+    {
+      "topic": "BTC 权力交接：OG鲸鱼 → 华尔街",
+      "content": "Oliver 通过链上数据分析指出，2025年最大的结构性变化是早期BTC巨鲸持续大量抛售，权力正在从OG矿工/鲸鱼向华尔街ETF和国库公司转移。这一过渡期可能持续半年到三年。他认为这是加密行业成熟的标志——BTC正在从投机资产变成标准金融工具，未来5-10年将进入养老金、央行和政府储备。"
+    },
+    {
+      "topic": "永续合约（Perps）赛道的三代演进",
+      "content": "Joanna 将链上永续合约分为三代：第一代 dYdX 开创了链上订单簿；第二代 GMX 在UX和清算管理上大幅改进；第三代 Hyperliquid 用应用链架构在性能上接近CEX，同时保留链上结算。Soon 正在开发的 mini perp 是一种极简化永续产品——只有1倍杠杆、15秒自动平仓，类似于对BTC下一时刻涨跌的二元预测，目标是降低新手门槛，扩大perp用户群。"
+    },
+    {
+      "topic": "韩国散户市场的独特价值",
+      "content": "Joanna 分享 Soon 的增长主要由韩国零售市场推动。她对韩国用户的成熟度和社区凝聚力印象深刻——即使在代币表现不佳时，韩国社区仍积极参与线下活动支持项目。SNZ 也宣布开设韩国办公室，Soon 与 BASE Korea 合作开发应用。她认为韩国散户市场是2025年的核心驱动力，将延续到2026年。"
+    },
+    {
+      "topic": "2026年展望：历史不会简单重复",
+      "content": "Oliver 警告不要盲目套用历史周期模型——本轮并未出现预期中的blow-off top和全面alt season。市场总是走向共识最不期待的方向。在alt coin方面，选对叙事变得更难，不像上轮周期几乎所有叙事都会涨。他建议始终质疑当前位置而非照搬过去经验。"
+    }
+  ],
+  "terms": [
+    { "term": "MiCA", "definition": "Markets in Crypto-Assets Regulation，欧盟加密资产市场法规" },
+    { "term": "OG", "definition": "Original Gangster，指加密行业早期参与者" },
+    { "term": "ETF", "definition": "Exchange-Traded Fund，交易所交易基金（此处指BTC现货ETF）" },
+    { "term": "Perps", "definition": "Perpetual Futures，永续合约——无到期日的衍生品合约" },
+    { "term": "Blow-off top", "definition": "暴涨见顶，指价格在周期末端急剧拉升后崩盘" },
+    { "term": "Alt season", "definition": "山寨币季节，指资金从BTC大量流入各类小币的周期性行情" },
+    { "term": "TGE", "definition": "Token Generation Event，代币生成事件/首次发行" }
+  ]
+}
