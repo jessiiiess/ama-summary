@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMA 总结</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8f8fa;
+      --surface: #ffffff;
+      --border: #e4e4ec;
+      --border-strong: #cdcdd8;
+      --accent: #3b6eda;
+      --accent-soft: #3b6eda0a;
+      --accent-badge: #eef2fb;
+      --text: #1c1c28;
+      --text-2: #52526b;
+      --text-3: #9494ab;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 4rem;
+    }
+
+    header { margin-bottom: 2.5rem; }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .controls label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-3);
+    }
+
+    #ama-picker {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.4rem 0.65rem;
+      outline: none;
+      transition: border-color 0.15s;
+      cursor: pointer;
+    }
+
+    #ama-picker:focus { border-color: var(--accent); }
+
+    #content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.15s, box-shadow 0.2s;
+      animation: slideUp 0.35s ease both;
+    }
+
+    .card:hover {
+      border-color: var(--border-strong);
+      box-shadow: 0 2px 8px rgba(45,42,38,0.04);
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card:nth-child(1) { animation-delay: 0s; }
+    .card:nth-child(2) { animation-delay: 0.04s; }
+    .card:nth-child(3) { animation-delay: 0.08s; }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #fafafc 0%, var(--surface) 100%);
+    }
+
+    .card-head h2 {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .card-body {
+      padding: 0.75rem 1.25rem 1rem;
+    }
+
+    .meta-item {
+      font-size: 0.8rem;
+      line-height: 1.8;
+      color: var(--text-2);
+    }
+
+    .meta-item .label {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .meta-item a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .meta-item a:hover { text-decoration: underline; }
+
+    .speaker-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .speaker-tag {
+      font-size: 0.75rem;
+      background: var(--accent-badge);
+      color: var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .summary-item {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .summary-item:last-child { border-bottom: none; }
+
+    .summary-topic {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .summary-content {
+      font-size: 0.8rem;
+      line-height: 1.7;
+      color: var(--text-2);
+    }
+
+    .term-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      padding: 0.35rem 0;
+      font-size: 0.78rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .term-row:last-child { border-bottom: none; }
+
+    .term-name {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 500;
+      color: var(--text);
+      white-space: nowrap;
+      min-width: 4rem;
+    }
+
+    .term-def {
+      color: var(--text-2);
+      line-height: 1.5;
+    }
+
+    .no-data {
+      text-align: center;
+      color: var(--text-3);
+      font-size: 0.875rem;
+      padding: 4rem 0;
+    }
+
+    .no-data.hidden { display: none; }
+
+    @media (max-width: 600px) {
+      .page { padding: 2rem 1rem 3rem; }
+      h1 { font-size: 1.3rem; }
+      .card-body { padding: 0.6rem 1rem 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="header-top">
+        <h1>AMA 总结</h1>
+        <div class="controls">
+          <label>选择期数</label>
+          <select id="ama-picker"></select>
+        </div>
+      </div>
+    </header>
+    <div id="content"></div>
+    <div class="no-data hidden" id="no-data">暂无数据</div>
+  </div>
+
+  <script>
+    const DATA_INDEX = [
+      { file: '2026-05.json', label: '2026.5 AMA' }
+    ];
+
+    function init() {
+      const picker = document.getElementById('ama-picker');
+      DATA_INDEX.forEach((item, i) => {
+        const opt = document.createElement('option');
+        opt.value = item.file;
+        opt.textContent = item.label;
+        picker.appendChild(opt);
+      });
+      picker.addEventListener('change', () => loadData(picker.value));
+      loadData(DATA_INDEX[0].file);
+    }
+
+    async function loadData(file) {
+      const content = document.getElementById('content');
+      const noData = document.getElementById('no-data');
+      content.innerHTML = '';
+      noData.classList.add('hidden');
+
+      try {
+        const res = await fetch(`data/${file}`);
+        if (!res.ok) throw new Error('not found');
+        const data = await res.json();
+        render(data);
+      } catch (e) {
+        noData.classList.remove('hidden');
+      }
+    }
+
+    function render(data) {
+      const content = document.getElementById('content');
+      content.innerHTML = '';
+
+      // Info card
+      const infoCard = document.createElement('div');
+      infoCard.className = 'card';
+      infoCard.innerHTML = `
+        <div class="card-head"><h2>AMA 信息</h2></div>
+        <div class="card-body">
+          <div class="meta-item"><span class="label">主题：</span>${data.title}</div>
+          <div class="meta-item"><span class="label">日期：</span>${data.date}</div>
+          <div class="meta-item"><span class="label">链接：</span><a href="${data.xLink}" target="_blank">X Space</a></div>
+          <div class="meta-item"><span class="label">嘉宾：</span></div>
+          <div class="speaker-list">
+            ${data.speakers.map(s => `<span class="speaker-tag">${s.name} | ${s.role} ${s.project}</span>`).join('')}
+          </div>
+        </div>
+      `;
+      content.appendChild(infoCard);
+
+      // Summary card
+      const summaryCard = document.createElement('div');
+      summaryCard.className = 'card';
+      summaryCard.innerHTML = `
+        <div class="card-head"><h2>内容总结</h2></div>
+        <div class="card-body">
+          ${data.summary.map(item => `
+            <div class="summary-item">
+              <div class="summary-topic">${item.topic}</div>
+              <div class="summary-content">${item.content}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      content.appendChild(summaryCard);
+
+      // Terms card
+      if (data.terms && data.terms.length > 0) {
+        const termsCard = document.createElement('div');
+        termsCard.className = 'card';
+        termsCard.innerHTML = `
+          <div class="card-head"><h2>术语解释</h2></div>
+          <div class="card-body">
+            ${data.terms.map(t => `
+              <div class="term-row">
+                <span class="term-name">${t.term}</span>
+                <span class="term-def">${t.definition}</span>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        content.appendChild(termsCard);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
