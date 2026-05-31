@@ -1,0 +1,52 @@
+{
+  "title": "AI Agents, Onchain Identity & the Future of Digital Economies",
+  "date": "2026/5/21",
+  "xLink": "https://x.com/HTX_Global/status/2056978228469010896",
+  "speakers": [
+    { "name": "Matthew Wang", "role": "Co-Founder", "project": "@OpenGradient" },
+    { "name": "Joanna Giang", "role": "Head of Ecosystem Partnerships", "project": "@billions_ntwk" },
+    { "name": "Melvis Langyintuo", "role": "Executive Director", "project": "@CantonFdn" },
+    { "name": "Chloe Zheng", "role": "Researcher", "project": "@HTX_Research" }
+  ],
+  "summary": [
+    {
+      "topic": "主题概述",
+      "content": "本期 AMA 聚焦 AI Agent 与区块链基础设施的融合，围绕 AI Agent 如何在链上进行交易、身份验证、隐私保护和机构合规等问题展开讨论。四位嘉宾分别代表可验证计算（OpenGradient）、身份基础设施（Billions Network）、机构级区块链（Canton Foundation）和交易所研究（HTX Research）四个维度。"
+    },
+    {
+      "topic": "AI Agent 最热趋势：加密支付与 x402 协议",
+      "content": "Matthew 认为最大的突破是加密支付协议 x402，它让 AI Agent 拥有钱包、自主支付和谈判能力，可以通过 OpenRouter 购买推理算力、在云平台开通实例、代表用户购买商品。未来 Agent 甚至能独立运营企业——自行采购算力、使用 SaaS 工具、用邮件联系客户。Melvis 则强调 AI Agent 正从简单聊天机器人向自主管理流动性、风险、投资组合和抵押品优化方向演进，但需要可信金融轨道才能规模化。"
+    },
+    {
+      "topic": "身份与问责：Agent 经济的缺失拼图",
+      "content": "Joanna 指出当前 AI Agent 有钱包、有记忆、能跨链交易，但唯独缺少身份。超过 51% 的在线流量已来自机器人，平台无法区分可信 Agent 和恶意 Agent。Billions Network 正在构建验证层，让 Agent 能证明'谁授权了它、授权做什么'，通过 ZK 证明保护隐私。她引用 Air Canada 案例说明——当一个 AI 做出虚假承诺，公司承担法律责任，规模化后风险巨大。"
+    },
+    {
+      "topic": "机构级网络为何不可或缺",
+      "content": "Melvis 解释说稳定币目前仍主要用于交易，尚未规模化进入工资支付、B2B 结算、流动性管理等场景。机构需要隐私、合规、可审计性和受信对手方。Canton Network 提供'按需披露'隐私设置，让交易方只看到必要信息。其网络已承载每日超 3500 亿美元回购交易和 8-9 万亿美元资产。"
+    },
+    {
+      "topic": "安全与效率的平衡：透明度+护栏",
+      "content": "Matthew 提出两个解决方案：一是全透明——通过链上证明（attestation）让用户看到 Agent 的每笔交易细节和推理过程；二是硬性护栏——设定每日/每周/每月支出上限，防止提示注入攻击导致 Agent 转走全部资金。Melvis 补充说 AI 在机构环境中不会独立运作，而是在权限管控、合规规则和严格风控下运行，类似电子交易和云计算的早期实施模式。"
+    },
+    {
+      "topic": "规模化最大瓶颈",
+      "content": "Chloe 从硬件角度分析——HBM（高带宽内存）、GPU 芯片和能源是物理瓶颈，Agent 需要更多 token 吞吐量才能更智能。Joanna 从标准角度分析——身份基础设施是协调问题，需要平台、监管和用户同时买入，三方节奏不同导致鸡生蛋问题。目前大多数 Agent 无法证明自己获得了授权，平台只能选择'全部屏蔽'或'无问责接受'，都阻碍了规模化。"
+    },
+    {
+      "topic": "未来 5-10 年愿景：AI 做运营层，Crypto 做基础设施层，机构带资产入场",
+      "content": "Matthew 认为 Crypto 将成为 AI 互相交互的默认方式（支付+协调+结算证明），传统金融巨头（Visa/Mastercard）会被协议颠覆。Joanna 类比 SSL——未来身份验证层将像 SSL 一样'隐形但不可或缺'。Melvis 总结三层结构：AI=运营层（自动化交易/合规/风控），Crypto=基础设施层（结算/互操作），机构=资产层（RWA 上链，实现 24/7 可编程金融市场）。"
+    }
+  ],
+  "terms": [
+    { "term": "x402", "definition": "一种新兴的 Agent 支付协议标准，允许 AI Agent 通过加密货币自主完成支付" },
+    { "term": "A2A", "definition": "Agent-to-Agent，Google 提出的 Agent 间通信协议" },
+    { "term": "ZK Proof", "definition": "Zero-Knowledge Proof，零知识证明，可在不暴露数据的情况下验证信息真实性" },
+    { "term": "TEE", "definition": "Trusted Execution Environment，可信执行环境，硬件级安全计算隔离" },
+    { "term": "RWA", "definition": "Real World Assets，真实世界资产代币化（如国债、房产等上链）" },
+    { "term": "HBM", "definition": "High Bandwidth Memory，高带宽内存，AI 训练/推理的关键硬件" },
+    { "term": "Canton Network", "definition": "专为机构金融打造的区块链，提供可配置隐私和合规控制" },
+    { "term": "Sybil Attack", "definition": "女巫攻击，指一个实体伪装成多个身份来操纵系统" },
+    { "term": "Prompt Injection", "definition": "提示注入攻击，通过恶意输入劫持 AI Agent 行为" }
+  ]
+}
